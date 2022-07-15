@@ -8,32 +8,27 @@
 - 任意浏览器（需支持JavaScript、CSS，一般2020年以后的浏览器都支持）
 - 下载后，**无需**互联网，即可运行
 #### 安装步骤
-安装有4种方法：
+安装有3种方法：
 
 <html>
 <body>
 <details id="1">
-<summary>1. <strong>强烈推荐使用</strong> 直接下载压缩包</summary>
+<summary>1. <strong>强烈推荐使用-适合新手</strong> 直接下载压缩包</summary>
 直接点击 <a href="https://github.com/fuxiang1109/myhomepage/archive/refs/heads/main.zip">这里</a> 下载 ZIP 压缩包，然后将下载的 .zip 文件解压即可。<br />
 <details>
-<summary></summary>
-<em>或者，你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em>
+<summary>上一步骤下载出错？</summary>
+<em>你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em>
 </details>
 </details>
 <details>
  <summary>2. 不推荐 HTTPS 协议下载</summary>
-首先，请保证你的电脑中安装了 Git 。如果你没安装，且不知道 Git 是什么，那推荐使用 <a href="#1">方法1</a> 。如果你仍要使用此方法，请点击<a helf="https://git.org">这里</a>下载 Git 。<br />
-然后，打开 git CMD ，输入
-```
- git clone https://github.com/fuxiang1109/myhomepage.git
-```
-等待下载成功即可。
+ 不推荐此方法，我也没搞懂。
 </details>
 <details>
  <summary>3. 不推荐 SSH 协议下载</summary>
-不推荐此方法，下载方式见
+不推荐此方法，我也没搞懂。
 </details>
-......一直到完成。
+ <details>
 最后阐述安装完成后的情况，展示下 Demo。
 </body>
 </html>
