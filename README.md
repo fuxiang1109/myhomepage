@@ -21,13 +21,18 @@
 </details>
 </details>
 <details>
-<summary>2. 推荐有能力者使用 HTTPS协议下载</summary>
-首先，请保证你的电脑中安装了 Git 。如果你没安装，且不知道 Git 是什么，那推荐使用 <a href="#1">方法1</a> 。<br />
-如果你仍要使用此方法，请点击<a helf="https://git.org">这里</a>下载 Git 。安装后
-
+ <summary>2. 不推荐 HTTPS 协议下载</summary>
+首先，请保证你的电脑中安装了 Git 。如果你没安装，且不知道 Git 是什么，那推荐使用 <a href="#1">方法1</a> 。如果你仍要使用此方法，请点击<a helf="https://git.org">这里</a>下载 Git 。<br />
+然后，打开 git CMD ，输入
+```
+ git clone https://github.com/fuxiang1109/myhomepage.git
+```
+等待下载成功即可。
 </details>
-3.
-4.
+<details>
+ <summary>3. 不推荐 SSH 协议下载</summary>
+不推荐此方法，下载方式见
+</details>
 ......一直到完成。
 最后阐述安装完成后的情况，展示下 Demo。
 </body>
