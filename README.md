@@ -1,5 +1,5 @@
 # 我的个人主页
-这就是我的个人主页，你可以前往 [www.sunfuxiang.tk](www.sunfuxiang.tk) 查看实际效果。
+这就是我的个人主页，你可以前往 [www.sunfuxiang.tk](https://www.sunfuxiang.tk) 查看实际效果。
 > 注意，Gitub 在国内较不稳定，如果加载失败请一会后重试，还是不行请自行使用 **合法** 的 VPN 上网。
 ## 上手指南
 以下指南将帮助你在本地机器上安装和运行该项目，进行开发和测试。
@@ -14,7 +14,7 @@
 <body>
 <details id="1">
 <summary>1. <strong>强烈推荐使用-适合新手</strong> 直接下载压缩包</summary>
-直接点击 <a href="https://github.com/fuxiang1109/myhomepage/archive/refs/heads/main.zip">这里</a> 下载 ZIP 压缩包，然后将下载的 .zip 文件解压即可。<br /><br />
+直接点击 <a href="./archive/refs/heads/main.zip">这里</a> 下载 ZIP 压缩包，然后将下载的 .zip 文件解压即可。<br /><br />
 <details>
 <summary>上一步骤下载出错？</summary>
 <em>你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em>
