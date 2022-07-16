@@ -63,7 +63,7 @@
 此网站全为 [孙福翔 @fuxiang1109](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ### 联系我
 邮箱 fuxiang1109@qq.com<br />
-GitHub fuxiang1109
+GitHub [fuxiang1109](https://github.com/fuxiang1109)
 ## 版权说明
 该项目签署了 MIT (麻省理工学院许可证) 授权许可。
 ```
