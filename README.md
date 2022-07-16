@@ -18,7 +18,7 @@
 <details>
 <summary>上一步骤下载出错？</summary>
 <em>你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em>
-<img scr="./img/readme-1.png" alt=""/>
+<img scr="/img/readme-1.png" alt="步骤图" />
 </details>
 </details>
 <details>
@@ -38,15 +38,15 @@
 如果要更改网站文件，请自行修改 index.html 文件。不会修改，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 。<br />
 例如，可以将：
 ```xml
-    <div id="header">
-        <h1 style="margin:0px;">孙福翔<br>个人主页</h1>
-    </div>
+<div id="header">
+    <h1 style="margin:0px;">孙福翔<br>个人主页</h1>
+</div>
 ```
 改为：
 ```xml
-    <div id="header">
-        <h1 style="margin:0px;">你的名字<br>个人主页</h1>
-    </div>
+<div id="header">
+    <h1 style="margin:0px;">你的名字<br>个人主页</h1>
+</div>
 ```
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
