@@ -34,30 +34,30 @@
 
 #### 测试&使用
 直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。<br />
-如果要更改网站文件，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 自行修改 index.html 文件。<br />
+如果要更改网站文件，请自行修改 index.html 文件。不会修改，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 。<br />
 例如，可以将：
-
+```xml
     <div id="header">
         <h1 style="margin:0px;">孙福翔<br>个人主页</h1>
     </div>
-
+```
 改为：
-
+```xml
     <div id="header">
         <h1 style="margin:0px;">你的名字<br>个人主页</h1>
     </div>
-
+```
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
 该项目签署了 MIT (麻省理工学院许可证) 授权许可。
-'''
+```json
 权限              限制           条件
   √商业用途         ×责任          ①许可和版权声明
   √修改             ×保证
   √分配
   √私人使用
-'''
+```
 中文版请参阅 [LICENSE_CH.md](LICENSE_CH.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。
 英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。
 ## 鸣谢
