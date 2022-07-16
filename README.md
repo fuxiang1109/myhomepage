@@ -21,26 +21,27 @@
 </details>
 </details>
 <details>
- <summary>2. 不推荐 HTTPS 协议下载</summary>
- 不推荐此方法，详见 [此处](https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
+ <summary>2. 不推荐 HTTPS拉取 下载</summary>
+ 不推荐此方法，详见 <a href="https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh">此处</a>
 </details>
 <details>
- <summary>3. 不推荐 SSH 协议下载</summary>
-不推荐此方法，详见 [此处](https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
+ <summary>3. 不推荐 SSH拉取 下载</summary>
+不推荐此方法，详见 <a href="https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh">此处</a>
 </details>
 除以上方法外，使用其他方法也行，只要下载成功（如是 ZIP 文件，请解压），即可。
 </body>
 </html>
 
 #### 测试&使用
-直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。
-如果要更改网站文件，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 自行修改 index.html 文件。例如，可以将：
+直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。<br />
+如果要更改网站文件，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 自行修改 index.html 文件。<br />
+例如，可以将：
 
     <div id="header">
         <h1 style="margin:0px;">孙福翔<br>个人主页</h1>
     </div>
 
-改为
+改为：
 
     <div id="header">
         <h1 style="margin:0px;">你的名字<br>个人主页</h1>
@@ -57,7 +58,8 @@
   √分配
   √私人使用
 
-详情请参阅 [LICENSE.md](LICENSE.md) 。
+中文版请参阅 [LICENSE_CH.md](LICENSE_CH.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。
+英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。
 ## 鸣谢
 - 该项目参考了 XXX 的 XXX
 - 灵感来源于 XXX
