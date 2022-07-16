@@ -12,13 +12,12 @@
 
 <html>
 <body>
-<details id="1">
+<details open>
 <summary>1. <strong>强烈推荐使用-适合新手</strong> 直接下载压缩包</summary>
 直接点击 <a href="https://github.com/fuxiang1109/myhomepage/archive/refs/heads/main.zip">这里</a> 下载 ZIP 压缩包，然后将下载的 .zip 文件解压即可。<br />
 <details>
 <summary>上一步骤下载出错？</summary>
 <em>你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em><br />
-<img href="https://raw.githubusercontent.com/fuxiang1109/myhomepage/main/img/readme-1.png" alt="步骤图" />
 </details>
 </details>
 <details>
@@ -32,20 +31,6 @@
 除以上方法外，使用其他方法也行，只要下载成功（如是 ZIP 文件，请解压），即可。
 </body>
 </html>
-
-#### 离线配置
-如果要离线打开网站，请将 206~207 行
-```xml
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<!--离线浏览，请将此处 ↑ 改为 jquery.min.js（也就是删掉 https://cdn.bootcss.com/jquery/3.2.1/ ）-->
-```
-按 207 行的注释改为
-```xml
-<script src="jquery.min.js"></script>
-<!--离线浏览，请将此处 ↑ 改为 jquery.min.js（也就是删掉 https://cdn.bootcss.com/jquery/3.2.1/ ）-->
-```
-即可离线浏览。
->注：只有需要离线访问是在更改，如要部署到服务器，建议不要更改，以免部署失败。
 
 #### 测试&使用
 直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。<br />
@@ -62,8 +47,6 @@
     <h1 style="margin:0px;">你的名字<br>个人主页</h1>
 </div>
 ```
-效果如下：<br />
-![效果图](/img/readme-2.png)
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
