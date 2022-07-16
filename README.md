@@ -35,17 +35,17 @@
 #### 测试&使用
 直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。
 如果要更改网站文件，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 自行修改 index.html 文件。例如，可以将：
-'''
-<div id="header">
-    <h1 style="margin:0px;">孙福翔<br>个人主页</h1>
-</div>
-'''
+
+    <div id="header">
+        <h1 style="margin:0px;">孙福翔<br>个人主页</h1>
+    </div>
+
 改为
-'''
-<div id="header">
-    <h1 style="margin:0px;">你的名字<br>个人主页</h1>
-</div>
-'''
+
+    <div id="header">
+        <h1 style="margin:0px;">你的名字<br>个人主页</h1>
+    </div>
+
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
