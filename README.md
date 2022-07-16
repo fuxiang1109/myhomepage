@@ -22,33 +22,42 @@
 </details>
 <details>
  <summary>2. 不推荐 HTTPS 协议下载</summary>
- 不推荐此方法，我也没搞懂，想使用请自行百度。
+ 不推荐此方法，详见 [此处](https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
 </details>
 <details>
  <summary>3. 不推荐 SSH 协议下载</summary>
-不推荐此方法，我也没搞懂，想使用请自行百度。
+不推荐此方法，详见 [此处](https://docs.github.com/cn/get-started/getting-started-with-git/managing-remote-repositories#switching-remote-urls-from-https-to-ssh)
 </details>
 除以上方法外，使用其他方法也行，只要下载成功（如是 ZIP 文件，请解压），即可。
 </body>
 </html>
 
 #### 测试&使用
-如果要将
+直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。
+如果要更改网站文件，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 自行修改 index.html 文件。例如，可以将：
+'''
+<div id="header">
+    <h1 style="margin:0px;">孙福翔<br>个人主页</h1>
+</div>
+'''
+改为
+'''
+<div id="header">
+    <h1 style="margin:0px;">你的名字<br>个人主页</h1>
+</div>
+'''
 ## 作者
-sfx
+此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
-该项目签署了 MIT (麻省理工学院许可证) 授权许可，
-Permissions
- Commercial use
- Modification
- Distribution
- Private use
-Limitations
- Liability
- Warranty
-Conditions
- License and copyright notice
- 详情请参阅 [LICENSE.md](LICENSE.md) 。
+该项目签署了 MIT (麻省理工学院许可证) 授权许可。
+
+权限              限制           条件
+  √商业用途         ×责任          ①许可和版权声明
+  √修改             ×保证
+  √分配
+  √私人使用
+
+详情请参阅 [LICENSE.md](LICENSE.md) 。
 ## 鸣谢
 - 该项目参考了 XXX 的 XXX
 - 灵感来源于 XXX
