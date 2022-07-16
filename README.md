@@ -14,7 +14,7 @@
 <body>
 <details id="1">
 <summary>1. <strong>强烈推荐使用-适合新手</strong> 直接下载压缩包</summary>
-直接点击 <a href="./archive/refs/heads/main.zip">这里</a> 下载 ZIP 压缩包，然后将下载的 .zip 文件解压即可。<br /><br />
+直接点击 <a href="./archive/refs/heads/main.zip">这里</a> 下载 ZIP 压缩包，然后将下载的 .zip 文件解压即可。<br />
 <details>
 <summary>上一步骤下载出错？</summary>
 <em>你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em>
@@ -22,18 +22,18 @@
 </details>
 <details>
  <summary>2. 不推荐 HTTPS 协议下载</summary>
- 不推荐此方法，我也没搞懂。
+ 不推荐此方法，我也没搞懂，想使用请自行百度。
 </details>
 <details>
  <summary>3. 不推荐 SSH 协议下载</summary>
-不推荐此方法，我也没搞懂。
+不推荐此方法，我也没搞懂，想使用请自行百度。
 </details>
-最后阐述安装完成后的情况，展示下 Demo。
+除以上方法外，使用其他方法也行，只要下载成功（如是 ZIP 文件，请解压），即可。
 </body>
 </html>
 
 #### 测试&使用
-解释一下如何运行该系统的自动测试部分。
+如果要将
 ## 作者
 sfx
 ## 版权说明
