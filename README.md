@@ -6,7 +6,7 @@
 #### 安装要求
 运行该项目必须要具备的条件及必须要安装的软件。
 - 任意浏览器（需支持JavaScript、CSS，一般2020年以后的浏览器都支持）
-- 下载后，**无需**互联网，即可运行（需先 [进行离线配置](#离线配置)）
+- 下载后，**无需**互联网，即可运行
 #### 安装步骤
 安装有3种方法：
 
@@ -34,7 +34,8 @@
 
 #### 测试&使用
 直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。<br />
-如果要更改网站文件，请自行修改 index.html 文件。不会修改，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 。<br />
+如果要删除无用文件，可以把 `ndex.html`、`jquery.min.js`、`myphoto.png` **保留**，其余都**删除**。
+如果要更改网站文件，请自行修改 `index.html` 与 `myphoto.png` 。不会修改，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 。<br />
 例如，可以将：
 ```xml
 <div id="header">
@@ -47,6 +48,7 @@
     <h1 style="margin:0px;">你的名字<br>个人主页</h1>
 </div>
 ```
+将 `myphoto.png` 替换为你的照片，但名字仍为 `myphoto.png`
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
@@ -61,6 +63,6 @@
 中文版请参阅 [LICENSE_CH.md](LICENSE_CH.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。<br />
 英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。
 ## 鸣谢
-- 该项目参考了 XXX 的 XXX
-- 灵感来源于 XXX
-- 其他
+- 灵感源于 [UP主康文昌的视频](https://www.bilibili.com/video/BV1hY411j7UM)
+- 代码学习于 [菜鸟教程](https://www.runoob.com/)
+- 网站托管与代码分享提供于 [GitHub](https://github.com/)
