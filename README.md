@@ -34,7 +34,7 @@
 
 #### 测试&使用
 直接使用浏览器打开目录下的 index.html 即可进入离线网站。如要部署到服务器，直接将目录里的全部 文件/文件夹 上传服务器即可。<br />
-如果要删除无用文件，可以把 `ndex.html`、`jquery.min.js`、`myphoto.png` **保留**，其余都**删除**。
+如果要删除无用文件，可以把 `index.html`、`jquery.min.js`、`myphoto.png` **保留**，其余都**删除**。<br />
 如果要更改网站文件，请自行修改 `index.html` 与 `myphoto.png` 。不会修改，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 。<br />
 例如，可以将：
 ```xml
@@ -48,7 +48,7 @@
     <h1 style="margin:0px;">你的名字<br>个人主页</h1>
 </div>
 ```
-将 `myphoto.png` 替换为你的照片，但名字仍为 `myphoto.png`
+也可以将 `myphoto.png` 替换为你的照片，但名字仍要是 `myphoto.png` 。
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
