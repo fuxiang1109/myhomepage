@@ -18,6 +18,7 @@
 <details>
 <summary>上一步骤下载出错？</summary>
 <em>你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em>
+<img scr="./img/readme-1.png" alt=""/>
 </details>
 </details>
 <details>
@@ -51,14 +52,14 @@
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
 该项目签署了 MIT (麻省理工学院许可证) 授权许可。
-```json
+```
 权限              限制           条件
   √商业用途         ×责任          ①许可和版权声明
   √修改             ×保证
   √分配
   √私人使用
 ```
-中文版请参阅 [LICENSE_CH.md](LICENSE_CH.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。
+中文版请参阅 [LICENSE_CH.md](LICENSE_CH.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。<br />
 英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。
 ## 鸣谢
 - 该项目参考了 XXX 的 XXX
