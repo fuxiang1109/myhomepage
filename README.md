@@ -49,6 +49,7 @@
 </div>
 ```
 效果如下：
+![效果图](/img/readme-1.png)
 <img scr="" / alt="效果图">
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
