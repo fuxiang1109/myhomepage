@@ -31,6 +31,7 @@
 除以上方法外，使用其他方法也行，只要下载成功（如是 ZIP 文件，请解压），即可。
 </body>
 </html>
+
 #### 部署到 服务器/云托管
 本网站设置了禁止搜索引擎搜索、追踪，如想让搜索引擎搜索、追踪，请：<br />
 1. 删除 robot.txt<br />
@@ -40,6 +41,7 @@
 ```
 然后将目录里的 `index.html`、`jquery.min.js`、`myphoto.png` 上传服务器即可。<br />
 <meta name="robots" content="noarchive">
+
 #### 测试&使用
 直接使用浏览器打开目录下的 index.html 即可进入离线网站。<br />
 如果要删除无用文件，可以把 `index.html`、`jquery.min.js`、`myphoto.png` **保留**，其余都**删除**。<br />
