@@ -18,7 +18,7 @@
 <details>
 <summary>上一步骤下载出错？</summary>
 <em>你可以点击绿色 code 按钮（Google译为代码，Edge译为法典），在菜单中选择 Download ZIP （Google译为下载压缩包，Edge译为下载邮编），将下载的 .zip 文件解压即可。</em>
-<img scr="/img/readme-1.png" alt="步骤图" />
+<img scr="/main/img/readme-1.png" alt="步骤图" />
 </details>
 </details>
 <details>
@@ -48,6 +48,8 @@
     <h1 style="margin:0px;">你的名字<br>个人主页</h1>
 </div>
 ```
+效果如下：
+<img scr="" / alt="效果图">
 ## 作者
 此文件全为 [孙福翔](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ## 版权说明
