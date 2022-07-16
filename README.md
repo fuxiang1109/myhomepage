@@ -60,7 +60,7 @@
   √分配
   √私人使用
 ```
-中文版请参阅 [LICENSE_CH.md](LICENSE_CH.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。<br />
+中文版请参阅 [LICENSE_CN.md](LICENSE_CN.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。<br />
 英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。
 ## 鸣谢
 - 灵感源于 [UP主康文昌的视频](https://www.bilibili.com/video/BV1hY411j7UM)
