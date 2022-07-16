@@ -203,8 +203,7 @@
         <div class="arrow"></div>
         <div class="stick"></div>
     </div>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <!--离线浏览，请将此处 ↑ 改为 jquery.min.js（也就是删掉 https://cdn.bootcss.com/jquery/3.2.1/ ）-->
+    <script src="jquery.min.js"></script>
 
     <!-- 弹窗 -->
     <div id="myModal" class="modal">
@@ -274,7 +273,7 @@
         <div id="content3">
             <p>
                 电话:18668986885<br>
-                微信:18668986800(暂时不能用)<br>
+                微信:同电话<br>
                 QQ:2062159179<br>
                 QQ邮箱:fuxiang1109@qq.com<br>
 
@@ -397,6 +396,8 @@
             var read = getCookie("read");
             if (read == "") {
                 modal.style.display = "block";
+            }else{
+                $("#container").attr("style", "margin:0px;");
             }
 
         </script>
