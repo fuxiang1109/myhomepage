@@ -32,20 +32,11 @@
 </body>
 </html>
 
-#### 部署到 服务器/云托管
-本网站设置了禁止搜索引擎搜索、追踪，如想让搜索引擎搜索、追踪，请：<br />
-1. 删除 robot.txt<br />
-2. 删除 index.html 第 10 行的
-```xml
-<meta name="robots" content="noarchive">
-```
-然后将目录里的 `index.html`、`jquery.min.js`、`myphoto.png` 上传服务器即可。<br />
-<meta name="robots" content="noarchive">
-
 #### 测试&使用
 直接使用浏览器打开目录下的 index.html 即可进入离线网站。<br />
-如果要删除无用文件，可以把 `index.html`、`jquery.min.js`、`myphoto.png` **保留**，其余都**删除**。<br />
-如果要更改网站文件，请自行修改 `index.html` 与 `myphoto.png` 。不会修改，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 。<br />
+
+#### 更改网站
+要更改网站文件，请自行修改 `index.html` 与 `myphoto.png` 。不会修改，可以在 [菜鸟教程](https://www.runoob.com/) 学习 HTML 和 JavaScript 。<br />
 例如，可以将：
 ```xml
 <div id="header">
@@ -58,7 +49,18 @@
     <h1 style="margin:0px;">你的名字<br>个人主页</h1>
 </div>
 ```
-也可以将 `myphoto.png` 替换为你的照片，但名字仍要是 `myphoto.png` 。
+也可以将 `myphoto.png` 替换为你的照片，但名字仍要是 `myphoto.png` 。<br />
+要删除无用文件，可以把 `index.html`、`jquery.min.js`、`myphoto.png` **保留**，其余都**删除**。
+
+#### 部署到 服务器/云托管
+本网站设置了禁止搜索引擎搜索、追踪，如想让搜索引擎搜索、追踪，请：<br />
+1. 删除 robot.txt<br />
+2. 删除 index.html 第 10 行的
+```xml
+<meta name="robots" content="noarchive">
+```
+然后将目录里的 `index.html`、`jquery.min.js`、`myphoto.png` 上传服务器即可。<br />
+
 ## 作者
 此网站全为 [孙福翔 @fuxiang1109](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
 ### 联系我
