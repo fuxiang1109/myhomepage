@@ -82,7 +82,7 @@ GitHub [fuxiang1109](https://github.com/fuxiang1109)
 ```
 中文版请参阅 [LICENSE_CN.md](LICENSE_CN.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。<br />
 英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。<br />
-对于我的肖像（myphoto.png）的授权许可请参阅 [个人肖像使用授权协议书](PORTRAIT AUTHORIZATION.md)
+对于我的肖像（myphoto.png）的授权许可请参阅 [个人肖像使用授权协议书](PORTRAITAUTHORIZATION.md)
 
 ## 鸣谢
 - 灵感源于 [UP主康文昌的视频](https://www.bilibili.com/video/BV1hY411j7UM)
