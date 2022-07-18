@@ -1,12 +1,15 @@
 # 我的个人主页
 这就是我的个人主页，你可以前往 [www.sunfuxiang.tk](https://www.sunfuxiang.tk) 查看实际效果。
 > 注意，Gitub 在国内较不稳定，如果加载失败请一会后重试，还是不行请自行使用 **合法** 的 VPN 上网。
+
 ## 上手指南
 以下指南将帮助你在本地机器上安装和运行该项目，进行开发和测试。
+
 #### 安装要求
-运行该项目必须要具备的条件及必须要安装的软件。
+运行该项目必须要具备的条件及必须要安装的软件：
 - 任意浏览器（需支持JavaScript、CSS，一般2020年以后的浏览器都支持）
 - 下载后，**无需**互联网，即可运行
+
 #### 安装步骤
 安装有3种方法：
 
@@ -63,9 +66,11 @@
 
 ## 作者
 此网站全为 [孙福翔 @fuxiang1109](https://github.com/fuxiang1109) 一人完成，如果觉得我做的不错，可以支持一下作者哦！
+
 ### 联系我
 邮箱 fuxiang1109@qq.com<br />
 GitHub [fuxiang1109](https://github.com/fuxiang1109)
+
 ## 版权说明
 该项目签署了 MIT (麻省理工学院许可证) 授权许可。
 ```
@@ -76,7 +81,10 @@ GitHub [fuxiang1109](https://github.com/fuxiang1109)
   √私人使用
 ```
 中文版请参阅 [LICENSE_CN.md](LICENSE_CN.md) 。注意，中文版为 Google+百度 翻译而成，仅供参考，以英文原版为准。<br />
-英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。
+英文版（原版）请参阅 [LICENSE.md](LICENSE.md) 。<br />
+
+对于我的肖像（myphoto.png）的授权许可请参阅 [PORTRAIT AUTHORIZATION.md](PORTRAIT AUTHORIZATION.md)
+
 ## 鸣谢
 - 灵感源于 [UP主康文昌的视频](https://www.bilibili.com/video/BV1hY411j7UM)
 - 代码学习于 [菜鸟教程](https://www.runoob.com/)
