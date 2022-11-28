@@ -1101,7 +1101,7 @@ function pad(key) {
   }
   return key;
 }
-var des3iv = "57290634";
+var des3iv = "12345678";
 var DES3 = {
   //3DES加密，CBC/PKCS5Padding
   encrypt: function (key, input) {
