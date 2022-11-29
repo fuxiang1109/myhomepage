@@ -1,24 +1,5 @@
-/**
- * DES 加密算法
- *
- * 该函数接受一个 8 字节字符串作为普通 DES 算法的密钥（也就是 64 位，但是算法只使用 56 位），或者接受一个 24 字节字符串作为 3DES
- * 算法的密钥；第二个参数是要加密或解密的信息字符串；第三个布尔值参数用来说明信息是加密还是解密；接下来的可选参数 mode 如果是 0 表示 ECB
- * 模式，1 表示 CBC 模式，默认是 ECB 模式；最后一个可选项是一个 8 字节的输入向量字符串（在 ECB 模式下不使用）。返回的密文是字符串。
- *
- * 参数： <br>
- * key: 8字节字符串作为普通 DES 算法的密钥,或 24 字节字符串作为 3DES <br>
- * message： 加密或解密的信息字符串<br>
- * encrypt: 布尔值参数用来说明信息是加密还是解密<br>
- * mode: 1:CBC模式，0:ECB模式(默认)<br>
- * iv:<br>
- * padding: 可选项, 8字节的输入向量字符串（在 ECB 模式下不使用）
- */
-//this takes the key, the message, and whether to encrypt or decrypt
 function des(key, message, encrypt, mode, iv, padding) {
-  if (encrypt)
-    //如果是加密的话，首先转换编码
-    message = unescape(encodeURIComponent(message));
-  //declaring this locally speeds things up a bit
+  if (encrypt) message = unescape(encodeURIComponent(message));
   var spfunction1 = new Array(
     0x1010400,
     0,
@@ -547,7 +528,6 @@ function des(key, message, encrypt, mode, iv, padding) {
     0x10000000,
     0x10041000
   );
-  //create the 16 or 48 subkeys we will need
   var keys = des_createKeys(key);
   var m = 0,
     i,
@@ -563,8 +543,7 @@ function des(key, message, encrypt, mode, iv, padding) {
   var endloop, loopinc;
   var len = message.length;
   var chunk = 0;
-  //set up the loops for single and triple des
-  var iterations = keys.length == 32 ? 3 : 9; //single or triple des
+  var iterations = keys.length == 32 ? 3 : 9;
   if (iterations == 3) {
     looping = encrypt ? new Array(0, 32, 2) : new Array(30, -2, -2);
   } else {
@@ -572,8 +551,7 @@ function des(key, message, encrypt, mode, iv, padding) {
       ? new Array(0, 32, 2, 62, 30, -2, 64, 96, 2)
       : new Array(94, 62, -2, 32, 64, 2, 30, -2, -2);
   }
-  //pad the message depending on the padding parameter
-  if (padding == 2) message += "    "; //pad the message with spaces
+  if (padding == 2) message += "    ";
   else if (padding == 1) {
     if (encrypt) {
       temp = 8 - (len % 8);
@@ -589,13 +567,10 @@ function des(key, message, encrypt, mode, iv, padding) {
       );
       if (temp === 8) len += 8;
     }
-  } //PKCS7 padding
-  else if (!padding) message += "\0\0\0\0\0\0\0\0"; //pad the message out with null bytes
-  //store the result here
+  } else if (!padding) message += "\0\0\0\0\0\0\0\0";
   var result = "";
   var tempresult = "";
   if (mode == 1) {
-    //CBC mode
     cbcleft =
       (iv.charCodeAt(m++) << 24) |
       (iv.charCodeAt(m++) << 16) |
@@ -608,7 +583,6 @@ function des(key, message, encrypt, mode, iv, padding) {
       iv.charCodeAt(m++);
     m = 0;
   }
-  //loop through each 64 bit chunk of the message
   while (m < len) {
     left =
       (message.charCodeAt(m++) << 24) |
@@ -620,7 +594,6 @@ function des(key, message, encrypt, mode, iv, padding) {
       (message.charCodeAt(m++) << 16) |
       (message.charCodeAt(m++) << 8) |
       message.charCodeAt(m++);
-    //for Cipher Block Chaining mode, xor the message with the previous result
     if (mode == 1) {
       if (encrypt) {
         left ^= cbcleft;
@@ -632,7 +605,6 @@ function des(key, message, encrypt, mode, iv, padding) {
         cbcright = right;
       }
     }
-    //first each 64 but chunk of the message must be permuted according to IP
     temp = ((left >>> 4) ^ right) & 0x0f0f0f0f;
     right ^= temp;
     left ^= temp << 4;
@@ -650,16 +622,12 @@ function des(key, message, encrypt, mode, iv, padding) {
     left ^= temp << 1;
     left = (left << 1) | (left >>> 31);
     right = (right << 1) | (right >>> 31);
-    //do this either 1 or 3 times for each chunk of the message
     for (j = 0; j < iterations; j += 3) {
       endloop = looping[j + 1];
       loopinc = looping[j + 2];
-      //now go through and perform the encryption or decryption
       for (i = looping[j]; i != endloop; i += loopinc) {
-        //for efficiency
         right1 = right ^ keys[i];
         right2 = ((right >>> 4) | (right << 28)) ^ keys[i + 1];
-        //the result is attained by passing these bytes through the S selection functions
         temp = left;
         left = right;
         right =
@@ -675,12 +643,10 @@ function des(key, message, encrypt, mode, iv, padding) {
       }
       temp = left;
       left = right;
-      right = temp; //unreverse left and right
-    } //for either 1 or 3 iterations
-    //move then each one bit to the right
+      right = temp;
+    }
     left = (left >>> 1) | (left << 31);
     right = (right >>> 1) | (right << 31);
-    //now perform IP-1, which is IP in the opposite direction
     temp = ((left >>> 1) ^ right) & 0x55555555;
     right ^= temp;
     left ^= temp << 1;
@@ -696,7 +662,6 @@ function des(key, message, encrypt, mode, iv, padding) {
     temp = ((left >>> 4) ^ right) & 0x0f0f0f0f;
     right ^= temp;
     left ^= temp << 4;
-    //for Cipher Block Chaining mode, xor the message with the previous result
     if (mode == 1) {
       if (encrypt) {
         cbcleft = left;
@@ -722,29 +687,21 @@ function des(key, message, encrypt, mode, iv, padding) {
       tempresult = "";
       chunk = 0;
     }
-  } //for every 8 characters, or 64 bits in the message
-  //return the result as an array
+  }
   result += tempresult;
   result = result.replace(/\0*$/g, "");
   if (!encrypt) {
-    //如果是解密的话，解密结束后对PKCS7 padding进行解码，并转换成utf-8编码
     if (padding === 1) {
-      //PKCS7 padding解码
       var len = result.length,
         paddingChars = 0;
       len && (paddingChars = result.charCodeAt(len - 1));
       paddingChars <= 8 && (result = result.substring(0, len - paddingChars));
     }
-    //转换成UTF-8编码
     result = decodeURIComponent(escape(result));
   }
   return result;
-} //end of des
-//des_createKeys
-//this takes as input a 64 bit key (even though only 56 bits are used)
-//as an array of 2 integers, and returns 16 48 bit keys
+}
 function des_createKeys(key) {
-  //declaring this locally speeds things up a bit
   var pc2bytes0 = new Array(
     0,
     0x4,
@@ -997,20 +954,15 @@ function des_createKeys(key) {
     0x101,
     0x105
   );
-  //how many iterations (1 for des, 3 for triple des)
-  var iterations = key.length > 8 ? 3 : 1; //changed by Paul 16/6/2007 to use Triple DES for 9+ byte keys
-  //stores the return keys
+  var iterations = key.length > 8 ? 3 : 1;
   var keys = new Array(32 * iterations);
-  //now define the left shifts which need to be done
   var shifts = new Array(0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0);
-  //other variables
   var lefttemp,
     righttemp,
     m = 0,
     n = 0,
     temp;
   for (var j = 0; j < iterations; j++) {
-    //either 1 or 3 iterations
     var left =
       (key.charCodeAt(m++) << 24) |
       (key.charCodeAt(m++) << 16) |
@@ -1042,18 +994,14 @@ function des_createKeys(key) {
     temp = ((left >>> 1) ^ right) & 0x55555555;
     right ^= temp;
     left ^= temp << 1;
-    //the right side needs to be shifted and to get the last four bits of the left side
     temp = (left << 8) | ((right >>> 20) & 0x000000f0);
-    //left needs to be put upside down
     left =
       (right << 24) |
       ((right << 8) & 0xff0000) |
       ((right >>> 8) & 0xff00) |
       ((right >>> 24) & 0xf0);
     right = temp;
-    //now go through and perform these shifts on the left and right keys
     for (var i = 0; i < shifts.length; i++) {
-      //shift the keys either one or two bits to the left
       if (shifts[i]) {
         left = (left << 2) | (left >>> 26);
         right = (right << 2) | (right >>> 26);
@@ -1063,10 +1011,6 @@ function des_createKeys(key) {
       }
       left &= -0xf;
       right &= -0xf;
-      //now apply PC-2, in such a way that E is easier when encrypting or decrypting
-      //this conversion will look like PC-2 except only the last 6 bits of each byte are used
-      //rather than 48 consecutive bits and the order of lines will be according to
-      //how the S selection functions will be applied: S2, S4, S6, S8, S1, S3, S5, S7
       lefttemp =
         pc2bytes0[left >>> 28] |
         pc2bytes1[(left >>> 24) & 0xf] |
@@ -1087,12 +1031,10 @@ function des_createKeys(key) {
       keys[n++] = lefttemp ^ temp;
       keys[n++] = righttemp ^ (temp << 16);
     }
-  } //for each iterations
-  //return the keys weve created
+  }
   return keys;
-} //end of des_createKeys
+}
 function genkey(key, start, end) {
-  //8 byte / 64 bit Key (DES) or 192 bit Key
   return { key: pad(key.slice(start, end)), vector: 1 };
 }
 function pad(key) {
@@ -1101,14 +1043,12 @@ function pad(key) {
   }
   return key;
 }
-var des3iv = "12345678";
+var des3iv = "74256831";
 var DES3 = {
-  //3DES加密，CBC/PKCS5Padding
   encrypt: function (key, input) {
     var genKey = genkey(key, 0, 24);
     return btoa(des(genKey.key, input, 1, 1, des3iv, 1));
   },
-  ////3DES解密，CBC/PKCS5Padding
   decrypt: function (key, input) {
     var genKey = genkey(key, 0, 24);
     return des(genKey.key, atob(input), 0, 1, des3iv, 1);
