@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+    别想翻源代码！这可是加密了的，不然你试试？
+-->
+
+<head>
+    <title>加密</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="DES3.js"></script>
+</head>
+
+<body>
+    <script>
+        function jiami() {
+            let key = Key.value;
+            let str = Str.value;
+            try {
+                now = DES3.encrypt(key, str);
+            } catch {
+                now = "加密失败"
+            }
+            document.write(now);
+        }
+    </script>
+
+    <textarea rows="10" cols="30" id="Str"></textarea>
+    <input rows="10" cols="30" id="Key">
+    <div>
+        <button onclick="jiami()">开始加密</button>
+    </div>
+
+</body>
