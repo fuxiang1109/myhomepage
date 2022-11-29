@@ -1044,7 +1044,7 @@ function pad(key) {
   return key;
 }
 var des3iv = "74256831";
-var DES3 = {
+var js = {
   encrypt: function (key, input) {
     var genKey = genkey(key, 0, 24);
     return btoa(des(genKey.key, input, 1, 1, des3iv, 1));

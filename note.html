@@ -12,7 +12,7 @@
     <meta name="author" content="孙福翔">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <script src="DES3.js"></script>
+    <script src="js.js"></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         function start() {
             if (key == "") { key = prompt("hihi！欢迎来到我的记事本+备忘录\n请输入密码", "") };
             try {
-                now = DES3.decrypt(key, STR);
+                now = js.decrypt(key, STR);
             } catch {
                 alert("输入错误，请重输");
                 key = "";
