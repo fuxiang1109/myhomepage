@@ -288,27 +288,6 @@
         <div id="content4">
             <p>
                 我自己做的网站好吗?
-                <script>
-                    var n = 0;
-                    function good() {
-                        alert("谢谢夸奖 我会继续努力的");
-                    }
-                    function bad() {
-                        document.write("<p>403 Forbidden<br>The server refused to execute the request<br></p>");
-                        setTimeout(function () {
-                            document.write('<p>哈哈哈 你被骗了<br>我只是个小白 做的不好请多体谅 我会努力改进的<br>刷新(F5)以回到正常页面 或点击<button onclick="reload()">此处</button>后自动刷新<br>但我觉得你一定想知道这串英文是什么意思 去百度一下吧</p>');
-                        }, 2000);
-                    }
-                    function reload() {
-                        location.reload();
-                    }
-                    function photo() {
-                        alert("干嘛,没见过帅哥啊!");
-                    }
-                    function bz() {
-                        alert("不好吗?");
-                    }
-                </script>
                 <button type="button" onclick="good()">好</button>
                 <button type="button" onclick="bad()">不好</button>
             </p>
@@ -384,10 +363,29 @@
             var read = getCookie("read");
             if (read == "") {
                 modal.style.display = "block";
-            }else{
+            } else {
                 $("#container").attr("style", "margin:0px;");
             }
 
+
+            function good() {
+                alert("谢谢夸奖 我会继续努力的");
+            }
+            function bad() {
+                document.write("<p>403 Forbidden<br>The server refused to execute the request<br></p>");
+                setTimeout(function () {
+                    document.write('<p>哈哈哈 你被骗了<br>我只是个小白 做的不好请多体谅 我会努力改进的<br>刷新(F5)以回到正常页面 或点击<button onclick="reload()">此处</button>后自动刷新<br>但我觉得你一定想知道这串英文是什么意思 去百度一下吧</p>');
+                }, 2000);
+            }
+            function reload() {
+                location.reload();
+            }
+            function photo() {
+                alert("干嘛,没见过帅哥啊!");
+            }
+            function bz() {
+                alert("不好吗?");
+            }
         </script>
 </body>
 
