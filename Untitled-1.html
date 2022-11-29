@@ -2,10 +2,16 @@
 <!--
     别想翻源代码！这可是加密了的，不然你试试？
 -->
+<html lang="zh-CN">
 
 <head>
-    <title>请输入密码</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <title>孙福翔的个人主页</title>
+    <meta name="robots" content="noarchive">
+    <meta name="description" content="孙福翔的个人主页">
+    <meta name="author" content="孙福翔">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <script src="DES3.js"></script>
 </head>
 
@@ -27,8 +33,8 @@
         start()
 
         if (getCookie("password") == "") {
-            let r = confirm("输入成功！你需要保存密码15天吗？");
-            if (r == true) { setCookie("password", key, 0.003472) };
+            let r = confirm("输入成功！你需要保存密码10天吗？");
+            if (r == true) { setCookie("password", key, 10) };
         }
 
         document.write(now);
@@ -50,3 +56,5 @@
         }
     </script>
 </body>
+
+</html>
