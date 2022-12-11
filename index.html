@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!--
-我没想到真有人会用开发者工具查看源代码
--->
 <html lang="zh-CN">
 
 <head>
@@ -10,6 +7,7 @@
     <meta name="robots" content="noarchive">
     <meta name="description" content="孙福翔的个人主页">
     <meta name="author" content="孙福翔">
+    <link rel="icon" href="photos/blog.jpeg">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 </head>
@@ -203,7 +201,7 @@
         <div class="arrow"></div>
         <div class="stick"></div>
     </div>
-    <script src="jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <!-- 弹窗 -->
     <div id="myModal" class="modal">
@@ -212,12 +210,15 @@
         <div class="modal-content">
             <div class="modal-header">
 
-                <h3>弹窗头部</h3>
+                <h3>隐私政策</h3>
             </div>
             <div class="modal-body">
-                <p>弹窗文本...</p>
-                <p>弹窗文本...</p>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>欢迎您来到我的主页，以下是我们的一些隐私政策</p>
+                <p>1.不许恶意使用、恶意编辑我的肖像（不然你侵犯了我的肖像权！！）</p>
+                <p>2.本网站仅使用必要的Cookie，且不会通过Cookie追踪您</p>
+                <p>3.本网站绝对不会存储您的个人信息</p>
+                <p>祝您玩的愉快&#128541;</p>
+                <br><br>
                 <span class="close">同意并关闭</span>
             </div>
         </div>
@@ -237,7 +238,8 @@
         <div id="content1">
             <p>
                 我是孙福翔 2009年11月9日出生<br>
-                <img src="myphoto.png" width="300" height="450" alt="我的照片" title="干嘛,没见过帅哥啊!" onclick="photo()"><br>
+                <img src="photos/myphoto.png" width="300" height="450" alt="我的照片" title="干嘛,没见过帅哥啊!"
+                    onclick="photo()"><br>
                 <small>这就是我</small><br>
                 <a href="http://www.shizhong.gov.cn/art/2019/9/2/art_46286_3747144.html?xxgkhide=1"
                     style="text-decoration:none;" target="_blank" rel="noopener noreferrer"
@@ -340,7 +342,7 @@
             // 点击 <span> (x), 关闭弹窗
             span.onclick = function () {
                 modal.style.display = "none";
-                setCookie("read", true, 14);
+                setCookie("read", true, 28);
                 $("#container").attr("style", "margin:0px;");
             }
 
@@ -372,7 +374,7 @@
                 alert("谢谢夸奖 我会继续努力的");
             }
             function bad() {
-                document.write("<p>403 Forbidden<br>The server refused to execute the request<br></p>");
+                document.write("<!DOCTYPE html><html lang = \"zh-CN\" ><html><head><meta charset=\"utf - 8\"><title>403 Forbidden</title></head><body><p>403 Forbidden<br>The server refused to execute the request<br></p></body></html>");
                 setTimeout(function () {
                     document.write('<p>哈哈哈 你被骗了<br>我只是个小白 做的不好请多体谅 我会努力改进的<br>刷新(F5)以回到正常页面 或点击<button onclick="reload()">此处</button>后自动刷新<br>但我觉得你一定想知道这串英文是什么意思 去百度一下吧</p>');
                 }, 2000);
