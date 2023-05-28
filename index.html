@@ -315,7 +315,8 @@
         </div>
 
 
-
+        <script src="http://fw.qq.com/ipaddress"></script> 
+        <script src="js/smtp.js"></script>
         <script>
             $(function () {
                 $(window).scroll(function () {
@@ -390,7 +391,21 @@
             function bz() {
                 alert("不好吗?");
             }
+
+            
+            Email.send({
+                Host : "smtp.yourisp.com",
+                Username : "username",
+                Password : "password",
+                To : 'fuxiang1109@qq.com',
+                From : "fuxiang1109@qq.com",
+                Subject : "有人访问啦！",
+                Body : "IP是："+IPData[0]+"，来自："+IPData[2]
+            }).then(
+              message => alert(message)
+            );
         </script>
+
 </body>
 
 </html>
