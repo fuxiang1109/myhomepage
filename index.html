@@ -190,6 +190,7 @@
     div {
         text-align: center;
     }
+
 </style>
 
 <body style="margin:0px;">
@@ -200,6 +201,7 @@
         <div class="stick"></div>
     </div>
     <script src="js/jquery.min.js"></script>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
 
     <!-- 弹窗 -->
     <div id="myModal" class="modal">
@@ -243,12 +245,12 @@
                 <img src="photos/myphoto.png" width="300" height="450" alt="我的照片" title="干嘛,没见过帅哥啊!"
                     onclick="photo()"><br>
                 <em><small>这就是我</small></em><br>
+                中学：<a href="http://www.shizhong.gov.cn/art/2022/4/22/art_94054_4806603.html" target="_blank"
+                    rel="noopener noreferrer" title="点击查看济南育秀中学简介">济南育秀中学</a> 2022级6班
                 <a href="http://www.shizhong.gov.cn/art/2022/4/15/art_94055_4804766.html" target="_blank"
-                    rel="noopener noreferrer" title="点击查看泉润学校简介">泉润学校</a>2022级6班的初中生
-                <a href="http://www.shizhong.gov.cn/art/2022/4/15/art_94055_4804766.html" target="_blank"
-                    rel="noopener noreferrer" title="点击查看泉润学校简介">泉润学校</a>2016级2班梦想中队的学生<br>
+                    rel="noopener noreferrer" title="点击查看泉润学校小学部简介">泉润学校小学部</a> 2016级2班梦想中队<br>
                 喜欢 和同学一起玩、读书、编程<br>
-                是我们班的<strong title="不好吗?" onclick="bz()">“好”</strong>班长
+                是我们小学、也是初中的<strong title="不好吗?" onclick="bz()"> 好 </strong>班长
             </p>
         </div>
 
@@ -276,10 +278,10 @@
         </div>
         <div id="content3">
             <p>
-                微信：wxid_xmlqpnwp3bgz22s<br>
+                微信：wxid_xmlqpnwp3bgz22<br>
                 QQ：2062159179<br>
                 邮箱：fuxiang1109@qq.com / sunfuxiang1109@163.com<br>
-                <small><em>*加好友请备注真实姓名 微信QQ平均1-2月上线一次(寒暑假时不定) &nbsp;&nbsp;邮件1-2周读一次<a href="wiki/如何发送邮件.html"
+                <small><em>*加好友请备注真实姓名 微信QQ平均2-7天上线一次(寒暑假时不定) &nbsp;&nbsp;邮件1-2周读一次<a href="wiki/如何发送邮件.html"
                             target="_blank" rel="noopener noreferrer" title="如何发送邮件">（如何发送邮件）</a></em></small>
             </p>
 
@@ -309,88 +311,94 @@
                         title="点击前往菜鸟教程官网">菜鸟教程</a>教会我代码
                     <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer"
                         title="点击前往GitHub官网">GitHub</a>提供网站托管和代码分享<br>
+                    <p id="ip"></p>
                 </small>
             </h6>
 
         </div>
-
-
-
-        <script>
-            $(function () {
-                $(window).scroll(function () {
-                    var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
-                    if (scrollt > 200) {
-                        $("#back_top").fadeIn(400);
-                    } else {
-                        $("#back_top").stop().fadeOut(400);
-                    }
-                });
-                $("#back_top").click(function () {
-                    $("html,body").animate({ scrollTop: "0px" }, 200);
-                });
-            });
-
-
-            // 获取弹窗
-            var modal = document.getElementById('myModal');
-
-            // 打开弹窗的按钮对象
-            var btn = document.getElementById("myBtn");
-
-            // 获取 <span> 元素，用于关闭弹窗 that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // 点击 <span> (x), 关闭弹窗
-            span.onclick = function () {
-                modal.style.display = "none";
-                setCookie("read", true, 28);
-                $("#container").attr("style", "margin:0px;");
-            }
-
-
-            function setCookie(cname, cvalue, exdays) {
-                var d = new Date();
-                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                var expires = "expires=" + d.toGMTString();
-                document.cookie = cname + "=" + cvalue + "; " + expires;
-            }
-            function getCookie(cname) {
-                var name = cname + "=";
-                var ca = document.cookie.split(';');
-                for (var i = 0; i < ca.length; i++) {
-                    var c = ca[i].trim();
-                    if (c.indexOf(name) == 0) { return c.substring(name.length, c.length); }
+    </div>
+    
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
+                if (scrollt > 200) {
+                    $("#back_top").fadeIn(400);
+                } else {
+                    $("#back_top").stop().fadeOut(400);
                 }
-                return "";
-            }
-            var read = getCookie("read");
-            if (read == "") {
-                modal.style.display = "block";
-            } else {
-                $("#container").attr("style", "margin:0px;");
-            }
+            });
+            $("#back_top").click(function () {
+                $("html,body").animate({ scrollTop: "0px" }, 200);
+            });
+        });
 
 
-            function good() {
-                alert("谢谢夸奖 我会继续努力的");
+        // 获取弹窗
+        var modal = document.getElementById('myModal');
+
+        // 打开弹窗的按钮对象
+        var btn = document.getElementById("myBtn");
+
+        // 获取 <span> 元素，用于关闭弹窗
+        var span = document.getElementsByClassName("close")[0];
+
+        // 点击 <span> (x)  关闭弹窗
+        span.onclick = function () {
+            modal.style.display = "none";
+            setCookie("read", true, 28);
+            $("#container").attr("style", "margin:0px;");
+            document.getElementById("ip").innerHTML= returnCitySN["cip"]+","+returnCitySN["cname"];/////
+        }
+
+
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toGMTString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name) == 0) { return c.substring(name.length, c.length); }
             }
-            function bad() {
-                document.write("<!DOCTYPE html><html lang = \"zh-CN\" ><html><head><meta charset=\"utf - 8\"><title>403 Forbidden</title></head><body><p>403 Forbidden<br>The server refused to execute the request<br></p></body></html>");
-                setTimeout(function () {
-                    document.write('<p>哈哈哈 你被骗了<br>我只是个小白 做的不好请多体谅 我会努力改进的<br>刷新(F5)以回到正常页面 或点击<button onclick="reload()">此处</button>后自动刷新<br>但我觉得你一定想知道这串英文是什么意思 去百度一下吧</p>');
-                }, 2000);
-            }
-            function reload() {
-                location.reload();
-            }
-            function photo() {
-                alert("干嘛,没见过帅哥啊!");
-            }
-            function bz() {
-                alert("不好吗?");
-            }
-        </script>
+            return "";
+        }
+        var read = getCookie("read");
+        if (read == "") {
+            modal.style.display = "block";
+        } else {
+            $("#container").attr("style", "margin:0px;");
+            document.getElementById("ip").innerHTML=returnCitySN["cip"]+","+returnCitySN["cname"];/////
+        }
+
+
+        function good() {
+            alert("谢谢夸奖 我会继续努力的");
+        }
+        function bad() {
+            document.write("<!DOCTYPE html><html lang = \"zh-CN\" ><html><head><meta charset=\"utf - 8\"><title>403 Forbidden</title></head><body><p>403 Forbidden<br>The server refused to execute the request<br></p></body></html>");
+            setTimeout(function () {
+                document.write('<iframe src="//player.bilibili.com/player.html?aid=928861104&bvid=BV1uT4y1P7CX&cid=287639008&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe><p>哈哈哈《你被骗了》<br>我只是个小白 做的不好请多体谅 我会努力改进的<br>刷新(F5)以回到正常页面 或点击<button onclick="reload()">此处</button>后自动刷新<br>但我觉得你一定想知道这串英文是什么意思 去百度一下吧</p>');
+            }, 2000);
+        }
+        function reload() {
+            location.reload();
+        }
+        function photo() {
+            alert("你干嘛~嗨嗨哟~~");
+        }
+        function bz() {
+            alert("不好吗?");
+        }
+        
+    </script>
+
+    
+
 </body>
 
 </html>
